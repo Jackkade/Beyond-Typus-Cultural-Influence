@@ -2122,14 +2122,17 @@ ave_row_3 = {
 			france_region = {
 				custom_trigger_tooltip = {
 					tooltip = ave_the_angevin_empire_at
-					owner = {
-						OR = {
-							tag = ROOT
-							is_subject_of = ROOT
-							overlord = {
+					OR = {
+						owner = {
+							OR = {
+								tag = ROOT
 								is_subject_of = ROOT
+								overlord = {
+									is_subject_of = ROOT
+								}
 							}
 						}
+						is_wasteland = yes
 					}
 				}
 				type = all
